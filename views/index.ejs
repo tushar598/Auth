@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/136528085_4b7be0fd-aa0b-4383-9f5f-95eb098746c2.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Welcome to Auth</title>
+  </head>
+  <body class="min-h-screen flex items-center justify-center p-4 relative">
+    
+    <!-- Floating Background Shapes -->
+    <div class="floating-shapes">
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+    
+    <div class="w-full max-w-6xl mx-auto flex items-center justify-center min-h-screen">
+      <div class="grid lg:grid-cols-2 gap-12 items-center w-full">
+        
+        <!-- Left Side - Branding & Info -->
+        <div class="text-center lg:text-left space-y-8 slide-up">
+          <div class="logo-glow">
+            <h1 class="text-6xl lg:text-7xl font-black text-white mb-4">
+              <span class="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent">
+                Auth
+              </span>
+            </h1>
+            <p class="text-xl text-purple-200 font-light mb-8">
+              Inspiring Tech Solutions for a Brighter Future
+            </p>
+          </div>
+          
+          <!-- Stats Cards -->
+          <div class="grid grid-cols-3 gap-4 mt-12">
+            <div class="stats-card rounded-2xl p-4 text-center">
+              <div class="text-2xl font-bold text-purple-300">10k+</div>
+              <div class="text-sm text-purple-200">Active Users</div>
+            </div>
+            <div class="stats-card rounded-2xl p-4 text-center">
+              <div class="text-2xl font-bold text-purple-300">99.9%</div>
+              <div class="text-sm text-purple-200">Uptime</div>
+            </div>
+            <div class="stats-card rounded-2xl p-4 text-center">
+              <div class="text-2xl font-bold text-purple-300">24/7</div>
+              <div class="text-sm text-purple-200">Support</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Side - Registration Form -->
+        <div class="flex justify-center lg:justify-end slide-up">
+          <div class="w-full max-w-md">
+            <div class="glass-effect rounded-3xl p-8 space-y-6">
+              <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-white mb-2">Join Auth</h2>
+                <p class="text-purple-200">Create your account and start your journey</p>
+              </div>
+              
+              <form action="/create" method="post" class="space-y-6">
+                <div class="input-container">
+                  <input
+                    id="username"
+                    type="text"
+                    name="username"
+                    placeholder=" "
+                    required
+                    class="w-full bg-transparent border-2 border-purple-500/30 rounded-xl py-4 px-4 text-white placeholder-transparent focus:border-purple-400 focus:outline-none input-glow transition-all duration-300"
+                  />
+                  <label for="username">Username</label>
+                </div>
+                
+                <div class="input-container">
+                  <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder=" "
+                    required
+                    class="w-full bg-transparent border-2 border-purple-500/30 rounded-xl py-4 px-4 text-white placeholder-transparent focus:border-purple-400 focus:outline-none input-glow transition-all duration-300"
+                  />
+                  <label for="email">Email Address</label>
+                </div>
+                
+                <div class="input-container">
+                  <input
+                    id="password"
+                    type="password"
+                    name="password"
+                    placeholder=" "
+                    required
+                    class="w-full bg-transparent border-2 border-purple-500/30 rounded-xl py-4 px-4 text-white placeholder-transparent focus:border-purple-400 focus:outline-none input-glow transition-all duration-300"
+                  />
+                  <label for="password">Password</label>
+                </div>
+                
+                <div class="input-container">
+                  <input
+                    id="age"
+                    type="number"
+                    name="age"
+                    placeholder=" "
+                    required
+                    min="13"
+                    max="120"
+                    class="w-full bg-transparent border-2 border-purple-500/30 rounded-xl py-4 px-4 text-white placeholder-transparent focus:border-purple-400 focus:outline-none input-glow transition-all duration-300"
+                  />
+                  <label for="age">Age</label>
+                </div>
+                
+                <button
+                  type="submit"
+                  class="w-full btn-primary text-white font-semibold py-4 px-6 rounded-xl focus:outline-none focus:ring-4 focus:ring-purple-300/50"
+                >
+                  Create Account
+                </button>
+              </form>
+              
+              <div class="text-center pt-6 border-t border-purple-500/20">
+                <p class="text-purple-200 mb-4">Already have an account?</p>
+                <a
+                  href="/login"
+                  class="btn-secondary text-purple-100 inline-block py-3 px-8 rounded-xl font-semibold focus:outline-none focus:ring-4 focus:ring-purple-300/50"
+                >
+                  Sign In
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+  </body>
+</html>
